@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ryb-CO-j4P">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Z8V-Ok-Fcr">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Ryb-CO-j4P" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HcJ-eE-uki">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OnJ-8X-Oq0" kind="relationship" relationship="rootViewController" id="h7H-4a-kb8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCY-bh-C2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-210"/>
+        </scene>
+        <!--View Controller - Ikemen Surrealists-->
+        <scene sceneID="oyO-rI-PeV">
+            <objects>
+                <viewController id="OnJ-8X-Oq0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qed-HG-sOz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ah7-kH-L3H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d1C-IC-Dwj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9S-Hz-bTr">
+                                <rect key="frame" x="32" y="156" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Taiwan">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sFv-Ey-8Qy" kind="push" id="oZU-rD-Qgs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ikemen Surrealists" id="6j3-jf-Fqf">
+                        <barButtonItem key="backBarButtonItem" title="Surrealists" id="pqY-dA-PPD"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPe-1z-UP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="-210"/>
+        </scene>
+        <!--View Controller - Taiwan-->
+        <scene sceneID="eHu-qo-qFJ">
+            <objects>
+                <viewController id="sFv-Ey-8Qy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HrE-xK-Pba"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xh0-7Y-Voq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uF6-EO-yhz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taiwan_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="n5n-0W-aZi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SN-Sc-vtt">
+                                <rect key="frame" x="40" y="102" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.5" alpha="0.33000000000000002" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Taiwan (Listeni/ˌtaɪˈwɑːn/ TY-WAHN Chinese: 臺灣 or 台灣; pinyin: Táiwān; see below), officially the Republic of China (ROC; Chinese: 中華民國; pinyin: Zhōnghuá Mínguó), is a state in East Asia. Originally based in mainland China, the Republic of China now governs the island of Taiwan, which makes up over 99% of its territory,[f] as well as Penghu, Kinmen, Matsu, and other minor islands. Neighboring states include the People's Republic of China to the west, Japan to the east and northeast, and the Philippines to the south. Taipei is the seat of the central government.[2] New Taipei, encompassing the metropolitan area surrounding Taipei proper, is the most populous city.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Taiwan" id="seK-j9-YPo">
+                        <barButtonItem key="backBarButtonItem" title="Ikemen Surrealists" id="XiY-Md-oJq"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sIQ-sB-AZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="-210"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Taiwan" width="256" height="256"/>
+        <image name="Taiwan_symbol" width="527" height="920"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
