@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		282691DD192115BE00FC2224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282691DC192115BE00FC2224 /* Foundation.framework */; };
+		282691DF192115BE00FC2224 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282691DE192115BE00FC2224 /* CoreGraphics.framework */; };
+		282691E1192115BE00FC2224 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282691E0192115BE00FC2224 /* UIKit.framework */; };
+		282691E7192115BE00FC2224 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 282691E5192115BE00FC2224 /* InfoPlist.strings */; };
+		282691E9192115BE00FC2224 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 282691E8192115BE00FC2224 /* main.m */; };
+		282691ED192115BE00FC2224 /* ShortyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 282691EC192115BE00FC2224 /* ShortyAppDelegate.m */; };
+		282691F0192115BE00FC2224 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282691EE192115BE00FC2224 /* Main_iPhone.storyboard */; };
+		282691F3192115BE00FC2224 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282691F1192115BE00FC2224 /* Main_iPad.storyboard */; };
+		282691F6192115BE00FC2224 /* ShortyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 282691F5192115BE00FC2224 /* ShortyViewController.m */; };
+		282691F8192115BE00FC2224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282691F7192115BE00FC2224 /* Images.xcassets */; };
+		282691FF192115BE00FC2224 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282691FE192115BE00FC2224 /* XCTest.framework */; };
+		28269200192115BE00FC2224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282691DC192115BE00FC2224 /* Foundation.framework */; };
+		28269201192115BE00FC2224 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282691E0192115BE00FC2224 /* UIKit.framework */; };
+		28269209192115BE00FC2224 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28269207192115BE00FC2224 /* InfoPlist.strings */; };
+		2826920B192115BE00FC2224 /* ShortyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2826920A192115BE00FC2224 /* ShortyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28269202192115BE00FC2224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 282691D1192115BE00FC2224 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 282691D8192115BE00FC2224;
+			remoteInfo = Shorty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		282691D9192115BE00FC2224 /* Shorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		282691DC192115BE00FC2224 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		282691DE192115BE00FC2224 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		282691E0192115BE00FC2224 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		282691E4192115BE00FC2224 /* Shorty-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shorty-Info.plist"; sourceTree = "<group>"; };
+		282691E6192115BE00FC2224 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		282691E8192115BE00FC2224 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		282691EA192115BE00FC2224 /* Shorty-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shorty-Prefix.pch"; sourceTree = "<group>"; };
+		282691EB192115BE00FC2224 /* ShortyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortyAppDelegate.h; sourceTree = "<group>"; };
+		282691EC192115BE00FC2224 /* ShortyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortyAppDelegate.m; sourceTree = "<group>"; };
+		282691EF192115BE00FC2224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		282691F2192115BE00FC2224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		282691F4192115BE00FC2224 /* ShortyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortyViewController.h; sourceTree = "<group>"; };
+		282691F5192115BE00FC2224 /* ShortyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortyViewController.m; sourceTree = "<group>"; };
+		282691F7192115BE00FC2224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		282691FD192115BE00FC2224 /* ShortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		282691FE192115BE00FC2224 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		28269206192115BE00FC2224 /* ShortyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortyTests-Info.plist"; sourceTree = "<group>"; };
+		28269208192115BE00FC2224 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2826920A192115BE00FC2224 /* ShortyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		282691D6192115BE00FC2224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282691DF192115BE00FC2224 /* CoreGraphics.framework in Frameworks */,
+				282691E1192115BE00FC2224 /* UIKit.framework in Frameworks */,
+				282691DD192115BE00FC2224 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282691FA192115BE00FC2224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282691FF192115BE00FC2224 /* XCTest.framework in Frameworks */,
+				28269201192115BE00FC2224 /* UIKit.framework in Frameworks */,
+				28269200192115BE00FC2224 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		282691D0192115BE00FC2224 = {
+			isa = PBXGroup;
+			children = (
+				282691E2192115BE00FC2224 /* Shorty */,
+				28269204192115BE00FC2224 /* ShortyTests */,
+				282691DB192115BE00FC2224 /* Frameworks */,
+				282691DA192115BE00FC2224 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		282691DA192115BE00FC2224 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				282691D9192115BE00FC2224 /* Shorty.app */,
+				282691FD192115BE00FC2224 /* ShortyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		282691DB192115BE00FC2224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282691DC192115BE00FC2224 /* Foundation.framework */,
+				282691DE192115BE00FC2224 /* CoreGraphics.framework */,
+				282691E0192115BE00FC2224 /* UIKit.framework */,
+				282691FE192115BE00FC2224 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		282691E2192115BE00FC2224 /* Shorty */ = {
+			isa = PBXGroup;
+			children = (
+				282691EB192115BE00FC2224 /* ShortyAppDelegate.h */,
+				282691EC192115BE00FC2224 /* ShortyAppDelegate.m */,
+				282691EE192115BE00FC2224 /* Main_iPhone.storyboard */,
+				282691F1192115BE00FC2224 /* Main_iPad.storyboard */,
+				282691F4192115BE00FC2224 /* ShortyViewController.h */,
+				282691F5192115BE00FC2224 /* ShortyViewController.m */,
+				282691F7192115BE00FC2224 /* Images.xcassets */,
+				282691E3192115BE00FC2224 /* Supporting Files */,
+			);
+			path = Shorty;
+			sourceTree = "<group>";
+		};
+		282691E3192115BE00FC2224 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				282691E4192115BE00FC2224 /* Shorty-Info.plist */,
+				282691E5192115BE00FC2224 /* InfoPlist.strings */,
+				282691E8192115BE00FC2224 /* main.m */,
+				282691EA192115BE00FC2224 /* Shorty-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28269204192115BE00FC2224 /* ShortyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2826920A192115BE00FC2224 /* ShortyTests.m */,
+				28269205192115BE00FC2224 /* Supporting Files */,
+			);
+			path = ShortyTests;
+			sourceTree = "<group>";
+		};
+		28269205192115BE00FC2224 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28269206192115BE00FC2224 /* ShortyTests-Info.plist */,
+				28269207192115BE00FC2224 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		282691D8192115BE00FC2224 /* Shorty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2826920E192115BE00FC2224 /* Build configuration list for PBXNativeTarget "Shorty" */;
+			buildPhases = (
+				282691D5192115BE00FC2224 /* Sources */,
+				282691D6192115BE00FC2224 /* Frameworks */,
+				282691D7192115BE00FC2224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shorty;
+			productName = Shorty;
+			productReference = 282691D9192115BE00FC2224 /* Shorty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		282691FC192115BE00FC2224 /* ShortyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28269211192115BE00FC2224 /* Build configuration list for PBXNativeTarget "ShortyTests" */;
+			buildPhases = (
+				282691F9192115BE00FC2224 /* Sources */,
+				282691FA192115BE00FC2224 /* Frameworks */,
+				282691FB192115BE00FC2224 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28269203192115BE00FC2224 /* PBXTargetDependency */,
+			);
+			name = ShortyTests;
+			productName = ShortyTests;
+			productReference = 282691FD192115BE00FC2224 /* ShortyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		282691D1192115BE00FC2224 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Shorty;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					282691FC192115BE00FC2224 = {
+						TestTargetID = 282691D8192115BE00FC2224;
+					};
+				};
+			};
+			buildConfigurationList = 282691D4192115BE00FC2224 /* Build configuration list for PBXProject "Shorty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 282691D0192115BE00FC2224;
+			productRefGroup = 282691DA192115BE00FC2224 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				282691D8192115BE00FC2224 /* Shorty */,
+				282691FC192115BE00FC2224 /* ShortyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		282691D7192115BE00FC2224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282691F3192115BE00FC2224 /* Main_iPad.storyboard in Resources */,
+				282691F8192115BE00FC2224 /* Images.xcassets in Resources */,
+				282691F0192115BE00FC2224 /* Main_iPhone.storyboard in Resources */,
+				282691E7192115BE00FC2224 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282691FB192115BE00FC2224 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28269209192115BE00FC2224 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		282691D5192115BE00FC2224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282691E9192115BE00FC2224 /* main.m in Sources */,
+				282691F6192115BE00FC2224 /* ShortyViewController.m in Sources */,
+				282691ED192115BE00FC2224 /* ShortyAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282691F9192115BE00FC2224 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2826920B192115BE00FC2224 /* ShortyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28269203192115BE00FC2224 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 282691D8192115BE00FC2224 /* Shorty */;
+			targetProxy = 28269202192115BE00FC2224 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		282691E5192115BE00FC2224 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				282691E6192115BE00FC2224 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		282691EE192115BE00FC2224 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				282691EF192115BE00FC2224 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		282691F1192115BE00FC2224 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				282691F2192115BE00FC2224 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		28269207192115BE00FC2224 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28269208192115BE00FC2224 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2826920C192115BE00FC2224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2826920D192115BE00FC2224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2826920F192115BE00FC2224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shorty/Shorty-Prefix.pch";
+				INFOPLIST_FILE = "Shorty/Shorty-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28269210192115BE00FC2224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shorty/Shorty-Prefix.pch";
+				INFOPLIST_FILE = "Shorty/Shorty-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		28269212192115BE00FC2224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shorty.app/Shorty";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shorty/Shorty-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShortyTests/ShortyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		28269213192115BE00FC2224 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Shorty.app/Shorty";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shorty/Shorty-Prefix.pch";
+				INFOPLIST_FILE = "ShortyTests/ShortyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		282691D4192115BE00FC2224 /* Build configuration list for PBXProject "Shorty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2826920C192115BE00FC2224 /* Debug */,
+				2826920D192115BE00FC2224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2826920E192115BE00FC2224 /* Build configuration list for PBXNativeTarget "Shorty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2826920F192115BE00FC2224 /* Debug */,
+				28269210192115BE00FC2224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28269211192115BE00FC2224 /* Build configuration list for PBXNativeTarget "ShortyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28269212192115BE00FC2224 /* Debug */,
+				28269213192115BE00FC2224 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 282691D1192115BE00FC2224 /* Project object */;
+}
