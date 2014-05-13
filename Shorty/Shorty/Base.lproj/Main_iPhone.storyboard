@@ -35,11 +35,33 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0D-zv-YsO">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0D-zv-YsO">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="B5b-Gn-0L4"/>
+                                </connections>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zH-lR-hlj">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="play" id="gsp-Fd-57K">
+                                        <connections>
+                                            <action selector="shortenURL:" destination="vXZ-lx-hvc" id="Suh-ta-SZ5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Tap arrow to shorten" style="plain" id="88q-Wy-SOy">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="Copy" id="XpR-ET-TXk">
+                                        <connections>
+                                            <action selector="clipboardURL:" destination="vXZ-lx-hvc" id="KJW-Pc-r7v"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -48,17 +70,24 @@
                             <constraint firstItem="oWY-F7-uYy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="CMr-z4-DuC"/>
                             <constraint firstItem="F0D-zv-YsO" firstAttribute="leading" secondItem="oWY-F7-uYy" secondAttribute="leading" id="I9m-cY-anj"/>
                             <constraint firstItem="F0D-zv-YsO" firstAttribute="top" secondItem="oWY-F7-uYy" secondAttribute="bottom" id="KP9-ES-dhv"/>
-                            <constraint firstAttribute="bottom" secondItem="F0D-zv-YsO" secondAttribute="bottom" id="WSR-DI-Ye4"/>
+                            <constraint firstItem="3zH-lR-hlj" firstAttribute="top" secondItem="F0D-zv-YsO" secondAttribute="bottom" id="eQP-jy-gCY"/>
+                            <constraint firstItem="F0D-zv-YsO" firstAttribute="leading" secondItem="3zH-lR-hlj" secondAttribute="leading" id="hKh-H5-gT9"/>
                             <constraint firstAttribute="trailing" secondItem="oWY-F7-uYy" secondAttribute="trailing" id="jHh-Bo-Jv2"/>
+                            <constraint firstAttribute="bottom" secondItem="3zH-lR-hlj" secondAttribute="bottom" id="lka-BU-hPy"/>
+                            <constraint firstItem="3zH-lR-hlj" firstAttribute="trailing" secondItem="F0D-zv-YsO" secondAttribute="trailing" id="v8r-tH-LMb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clipboardButton" destination="XpR-ET-TXk" id="Pfz-Xd-4r0"/>
+                        <outlet property="shortLabel" destination="88q-Wy-SOy" id="XGz-BW-qZX"/>
+                        <outlet property="shortenButton" destination="gsp-Fd-57K" id="Am8-9B-Hsu"/>
                         <outlet property="urlField" destination="CO3-Ip-Mkr" id="xuX-WX-nKD"/>
                         <outlet property="webView" destination="F0D-zv-YsO" id="1OP-So-2r5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="68" y="55"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
