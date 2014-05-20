@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -52,9 +52,11 @@
                                             <action selector="shortenURL:" destination="vXZ-lx-hvc" id="Suh-ta-SZ5"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qOL-6o-ogb"/>
                                     <barButtonItem title="Tap arrow to shorten" style="plain" id="88q-Wy-SOy">
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cfT-hi-Zo9"/>
                                     <barButtonItem enabled="NO" title="Copy" id="XpR-ET-TXk">
                                         <connections>
                                             <action selector="clipboardURL:" destination="vXZ-lx-hvc" id="KJW-Pc-r7v"/>
@@ -67,9 +69,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="F0D-zv-YsO" secondAttribute="trailing" id="82c-G8-yF3"/>
                             <constraint firstItem="oWY-F7-uYy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="A36-IJ-E1a"/>
-                            <constraint firstItem="oWY-F7-uYy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="CMr-z4-DuC"/>
                             <constraint firstItem="F0D-zv-YsO" firstAttribute="leading" secondItem="oWY-F7-uYy" secondAttribute="leading" id="I9m-cY-anj"/>
                             <constraint firstItem="F0D-zv-YsO" firstAttribute="top" secondItem="oWY-F7-uYy" secondAttribute="bottom" id="KP9-ES-dhv"/>
+                            <constraint firstItem="oWY-F7-uYy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="avb-1p-1Lh"/>
                             <constraint firstItem="3zH-lR-hlj" firstAttribute="top" secondItem="F0D-zv-YsO" secondAttribute="bottom" id="eQP-jy-gCY"/>
                             <constraint firstItem="F0D-zv-YsO" firstAttribute="leading" secondItem="3zH-lR-hlj" secondAttribute="leading" id="hKh-H5-gT9"/>
                             <constraint firstAttribute="trailing" secondItem="oWY-F7-uYy" secondAttribute="trailing" id="jHh-Bo-Jv2"/>
@@ -87,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="55"/>
+            <point key="canvasLocation" x="-296" y="55"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
